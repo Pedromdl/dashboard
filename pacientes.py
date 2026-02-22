@@ -68,7 +68,7 @@ def mostrar_pacientes(df_filtrado, df_todos_anos, ano_selecionado):
     # =============================
     # KPIs
     # =============================
-    total_pacientes = df_filtrado["Nome do Cliente"].nunique()
+    total_pacientes = novos_pacientes_mes["Novos Pacientes"].sum()
     total_sessoes = len(df_filtrado)
 
     sessoes_por_paciente = (
